@@ -66,7 +66,6 @@ binary_tree_t *chooseparent(binary_tree_t *tree)
 	}
 	else
 	{
-		printf("esto es balance %d", binary_tree_balance(tree->left));
 		if (tree->right)
 			return (chooseparent(tree->right));
 	}
@@ -124,31 +123,6 @@ binary_tree_t *verify_order(binary_tree_t *tree)
 		}
 	}
 	return (tree);
-}
-
-/**
- * binary_tree_heighta - measures the height of a binary tree
- * @tree: root of tree
- * Return: returns the height of the node
- */
-int binary_tree_heighta(const binary_tree_t *tree)
-{
-	int a = 0;
-	int b = 0;
-	/* int c = 0; */
-
-	if (tree)
-	{
-		if (tree->left)
-			a = (1 + binary_tree_heighta(tree->left));
-		if (tree->right)
-			b = (1 + binary_tree_heighta(tree->right));
-		if (a < b)
-			return (b);
-		else
-			return (a);
-	}
-	return (0);
 }
 
 /**
