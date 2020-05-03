@@ -2,8 +2,6 @@
 #include "binary_trees.h"
 #include <stdio.h>
 #include "binary_trees.h"
-int binary_tree_heighta(const binary_tree_t *tree);
-int binary_tree_is_perfect(const binary_tree_t *tree);
 
 /**
  * heap_insert - Function to insert a node for a binary tree

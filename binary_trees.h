@@ -44,4 +44,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 binary_tree_t *verify_order(binary_tree_t *tree);
 binary_tree_t *chooseparent(binary_tree_t *tree);
 heap_t *heap_insert(heap_t **root, int value);
+int binary_tree_heighta(const binary_tree_t *tree);
+int binary_tree_is_perfect(const binary_tree_t *tree);
+
 #endif /* _BINARY_TREES_H_ */
